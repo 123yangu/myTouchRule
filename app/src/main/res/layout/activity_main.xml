@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    >
+
+
+    <Button
+        android:id="@+id/bt_subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:text="-"
+        />
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/bt_subtract"
+        android:textSize="18dp"
+        android:text="+"
+        android:layout_height="wrap_content" />
+
+    <test.ccy.com.mytouchrule.view.MecHorizontalScaleView
+        android:id="@+id/horizontalScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="20dp"
+        app:mec_scale_view_height="8dp"
+        app:mec_scale_view_margin="5dp"
+        app:mec_scale_view_max="20"
+        app:mec_scale_view_min="0" />
+
+    <test.ccy.com.mytouchrule.view.MecVerticalScaleView
+        android:id="@+id/verticalScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        app:mec_scale_view_height="8dp"
+        app:mec_scale_view_margin="5dp"
+        app:mec_scale_view_max="20"
+        app:mec_scale_view_min="0" />
+</RelativeLayout>
